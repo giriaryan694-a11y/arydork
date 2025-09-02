@@ -46,7 +46,7 @@ Ethical Disclaimer & Legal Warning
 
 - ARYDORKER is intended for educational purposes, bug bounty programs, and testing in legally authorized environments only.
 - Unauthorized scanning, exploiting, or hacking of websites without explicit permission is illegal and may result in criminal and civil penalties.
-- Misusing AI models (including ChatGPT) for malicious purposes, hacking, or illegal activity is strictly prohibited and can lead to action by the service provider (OpenAI) in addition to legal consequences.
+- Misusing AI models (including ChatGPT) for malicious purposes, unauthorised hacking, or illegal activity is strictly prohibited and can lead to action by the service provider (OpenAI) in addition to legal consequences.
 - Always ensure you have explicit authorization from the system owner before performing any security testing.
 - Use this project responsibly to learn, practice, and contribute to cybersecurity ethically.
 
