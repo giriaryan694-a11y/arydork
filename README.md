@@ -1,4 +1,4 @@
-#ARYDORK Guide – Bug Bounty + AI + Dorking
+# ARYDORK Guide – Bug Bounty + AI + Dorking
 
 ##⚡ Introduction
 
