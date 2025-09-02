@@ -1,6 +1,6 @@
 # ARYDORK Guide – Bug Bounty + AI + Dorking
 
-##⚡ Introduction
+### ⚡ Introduction
 
 ARYDORK is a step-by-step educational guide for bug bounty enthusiasts and security researchers. It shows how to combine AI, Google dorking, and code analysis to learn about web vulnerabilities in a safe and responsible way.
 
