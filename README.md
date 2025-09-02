@@ -1,68 +1,72 @@
-ARYDORK – ChatGPT-Assisted Dorking for Bug Bounty
+#ARYDORK Guide – Bug Bounty + AI + Dorking
 
-Overview
-ARYDORK is a concept for ethical bug bounty hunting that combines AI-assisted dork generation, Google search, and ChatGPT-powered source code analysis.
+##⚡ Introduction
 
-Due to Google’s anti-bot measures, live scraping is not feasible, so this project demonstrates how ChatGPT can be leveraged for generating dorks and analyzing source code, while Google can be used manually to search for vulnerable targets.
+ARYDORK is a step-by-step educational guide for bug bounty enthusiasts and security researchers. It shows how to combine AI, Google dorking, and code analysis to learn about web vulnerabilities in a safe and responsible way.
 
-Features
+Note: This guide is meant for learning and authorized bug bounty programs only.
 
-1. Dork Generation with ChatGPT
-   - Generate advanced vulnerability dorks automatically.
-   - Focused on SQLi, LFI, XSS, RCE, and exposed configuration files.
+## 1️⃣ Dork Generation with AI
 
-2. Manual or Automated Google Search
-   - Use generated dorks to search on Google.
-   - Due to security measures, direct scraping is not recommended; manual search or Google Custom Search API can be used.
+- Use ChatGPT to create creative Google dorks for reconnaissance. Example:
 
-3. Source Code Analysis with ChatGPT
-   - Once a vulnerable page is identified, its source code or HTML can be analyzed by ChatGPT for vulnerabilities.
-   - Highlights potential injection points, misconfigurations, or insecure practices.
+- Ask ChatGPT: “Generate Google dorks to find potential vulnerabilities in testphp.vulnweb.com for learning purposes”
 
-Workflow
+- ChatGPT can suggest patterns like:
 
-1. Generate Dorks
-   Example: inurl:".php?id=" "You have an error in your SQL syntax"
-   Example: inurl:"search" "q=" "Warning: mysql_fetch_assoc()"
-   Example: filetype:env "DB_PASSWORD"
+- inurl:".php?id=" site:testphp.vulnweb.com
 
-2. Search Targets
-   - Copy a generated dork into Google search manually:
-     https://www.google.com/search?q=inurl:".php?id="+%22You+have+an+error+in+your+SQL+syntax%22
-   - Identify live vulnerable pages for testing in safe environments.
+- "Warning: mysql_fetch_assoc()" site:testphp.vulnweb.com
 
-3. Analyze Source Code
-   - Use ChatGPT to analyze HTML or source snippets:
-     Input: HTML snippet from target page
-     ChatGPT Output: Possible SQL injection point detected, unsanitized parameters: id
+- Always generate dorks ethically and use them on authorized labs only.
 
-4. Safe Testing
-   - Only test on legally authorized environments such as:
-     http://testphp.vulnweb.com/
-     http://testhtml5.vulnweb.com/
-     http://rest.vulnweb.com/
+## 2️⃣ Recon Using Google
 
-Ethical Disclaimer & Legal Warning
+- Search the generated dorks manually on Google.
 
-- ARYDORKER is intended for educational purposes, bug bounty programs, and testing in legally authorized environments only.
-- Unauthorized scanning, exploiting, or hacking of websites without explicit permission is illegal and may result in criminal and civil penalties.
-- Misusing AI models (including ChatGPT) for malicious purposes, unauthorised hacking, or illegal activity is strictly prohibited and can lead to action by the service provider (OpenAI) in addition to legal consequences.
-- Always ensure you have explicit authorization from the system owner before performing any security testing.
-- Use this project responsibly to learn, practice, and contribute to cybersecurity ethically.
+- Analyze results for educational insights.
 
-Benefits
+- Avoid automated scraping to prevent IP issues or account restrictions.
 
-- AI-assisted dorking speeds up reconnaissance.
-- No risk of Google bans when using ChatGPT for generation.
-- Ethical bug bounty testing using safe test targets.
-- ChatGPT source analysis can highlight potential vulnerabilities without manual effort.
+- Reminder: Using these methods without explicit authorization is considered unethical. Stick to bug bounty programs and learning labs.
 
-Example Usage
+## 3️⃣ AI-Powered Source Code Analysis
 
-1. Ask ChatGPT to generate vulnerability dorks for SQLi:
-   "Generate 10 SQLi Google dorks targeting PHP websites"
-2. Copy the dorks to Google manually and identify targets.
-3. Save the HTML source code of pages.
-4. Feed the source to ChatGPT for vulnerability analysis.
+- Collect publicly available code snippets from websites or open repositories.
 
-Made by Aryan – For Ethical Bug Bounty and Cybersecurity Learning
+- Use ChatGPT to study the code for learning about:
+
+- SQL patterns and queries
+
+- Input validation
+
+- Authentication flows
+
+- Safe coding practices
+
+- ChatGPT is a learning assistant — it should never be used on systems without permission.
+
+## 4️⃣ Ethics & Authorized Use Disclaimer
+
+-ARYDORK is for educational and authorized bug bounty purposes only.
+
+-Do not use these methods on systems without explicit permission.
+
+-Misuse can lead to:
+
+- Account restrictions on platforms
+
+- thical violations
+
+- Consequences from AI service providers (e.g., OpenAI) if AI is used inappropriately
+
+- Focus on learning, research, and safe experimentation. Always stay authorized and responsible.
+
+## 5️⃣ Practical Tips for Learners
+
+- Use bug bounty programs or legal labs like testphp.vulnweb.com for experiments.
+- Document your learning and observations carefully.
+
+Use AI as a support tool for understanding and research, not for unauthorized exploration.
+
+- Share your findings ethically and responsibly.
